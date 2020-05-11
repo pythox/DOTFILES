@@ -31,9 +31,9 @@ let mapleader = " "
 nnoremap ; :
 map <F8> :vs ~/.vimrc<CR> 
 map <F2> :NERDTreeToggle <CR>
-map <F3> :tabnew ~/code/cp/input<CR>
+map <F3> :tabnew ~/Desktop/cp/input<CR>
 " RUN C++ FILES FROM EDITOR
-autocmd filetype cpp nnoremap <F5> :w <bar> !clear && printf "INPUT\n---------------------------------\n" && cat ~/code/cp/input && printf "\nOUTPUT\n----------------------------------\n" && g++ -ulimit -Wall -Wno-unused-result -std=c++14 % && ./a.out < ~/code/cp/input<CR>
+autocmd filetype cpp nnoremap <F5> :w <bar> !clear && printf "INPUT\n---------------------------------\n" && cat ~/Desktop/cp/input && printf "\nOUTPUT\n----------------------------------\n" && g++ -ulimit -Wall -Wno-unused-result -std=c++14 % && ./a.out < ~/Desktop/cp/input<CR>
 
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
